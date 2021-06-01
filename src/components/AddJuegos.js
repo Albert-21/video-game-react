@@ -16,7 +16,6 @@ const AddJuegos = () => {
     descripcion: null,
     imageUrl: null
   }
-  const array = [inf];
 
   const onImageChange = (e) => {
     const reader = new FileReader();

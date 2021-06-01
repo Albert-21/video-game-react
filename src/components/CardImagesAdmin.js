@@ -23,6 +23,7 @@ const CardImagesAdmin = () => {
     var dataRef = database.ref('videoJuegos');
     dataRef.once('value', snapshot => {
       snapshot.forEach(element => {
+          console.log("ciclo")
         inf = element.val()
         array.push(inf)
 
@@ -63,7 +64,7 @@ const CardImagesAdmin = () => {
 
       <MDBBtn onClick={consulta} color="primary" size="md">
         Consulta
-                    </MDBBtn>
+      </MDBBtn>
 
       <div class="container">
         {
